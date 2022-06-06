@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+
+{% for article in articles %}
+     <h3>{{ article.produit.nom }}</h3>
+     <img src="{{ article.produit.photo.url }}" alt="{{ article.produit.nom }}" style="max-width: 250px;">
+    <h3>{{ article.quantite}}  elements dans le panier</h3>
+{% endfor %}
+
+
+{% endblock %} 
+   

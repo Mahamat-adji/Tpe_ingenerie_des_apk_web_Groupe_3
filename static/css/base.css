@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+html  body {
+	font-family: 'ROBOTO',sans-serif;
+    font-size: sans-serif;
+	background-color:rgb(237, 165, 238);
+
+}
+.navbar {
+	background-image: linear-gradient(to left, #c940ff, #dbc1e6);
+}
+
+.btn-primary {
+	background-image: linear-gradient(to left, #c940ff, #dbc1e6);
+}
+
+.footer{
+	background-image: linear-gradient(to right, #c940ff, #dbc1e6);
+}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
+<body>
+{% block content %}
+<h2>{{ produit.nom }}</h2>
+<img src="{{ produit.photo.url }}" alt="{{ produit.nom }}" style="max-width: 250px;">
+
+<h2>{{ produit.prix }}fcfa</h2>
+<h2>{{ produit.stock}} en stock</h2>
+<h2>DESCRIPTION DU PRODUIT: {{ produit.description }}</h2>
+
+{% if user.is_authenticated %}
+    <a href="{% url 'ajout_au_panier' produit.slug %}" class="btn btn-primary">ajouter_au_panier</a>
+{% endif %}
+{% endblock %}
+</body>
+</html>
